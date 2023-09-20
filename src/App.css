@@ -1,38 +1,68 @@
 .App {
+  width: 100vw;
+  height: 96vh;
+  overflow: hidden;
+  overflow-y: scroll;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.joinChat{
+  width: 40vw;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.joinChat p{
+  font-size: 2em;
+  font-weight: bold;
+}
+.joinChat input{
+  width: 20vw;
+  height: 5vh;
+  font-size: 1.2em;
+}
+.joinChat button{
+  width: 10vw;
+  height: 4vh;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid green;
+}
+.joinChat button:hover{
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 500px) and (min-width : 280px){
+  .joinChat{
+    height: 40vh;
+    width: 90vw;
   }
-  to {
-    transform: rotate(360deg);
+  .joinChat input{
+    width: 50vw;
+    border: 1px solid gray;
+  }
+  .joinChat button{
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width :950px){
+  .joinChat{
+    height: 40vh;
+    width: 90vw;
+  }
+  .joinChat input{
+    width: 50vw;
+    border: 1px solid gray;
+  }
+  .joinChat button{
+    width: 40vw;
   }
 }

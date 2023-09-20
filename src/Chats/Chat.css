@@ -1,0 +1,121 @@
+.Chat{
+    width: 30vw;
+    height: 71.3vh;
+    border: 2px solid gray;
+}
+.Chat-Head{
+    width: 30vw;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 20px;
+    text-align: left;
+}
+.Chat-Head p{
+    margin: 0;
+
+}
+.Chat-Body{
+    width: 30vw;
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.You{
+    text-align: right;
+}
+.other{
+    text-align: left;
+}
+.obg{
+    background-color: green;
+}
+.ybg{
+    background-color: blue;
+}
+.Chat-Body .message{
+    max-width: 15vw;
+    display: inline-block;
+    box-sizing: border-box;
+    
+    color: white;
+    font-size: 1em;
+    overflow-wrap: break-word;
+    margin-left:5px ;
+    padding: 7px 10px;
+    border-radius: 15px;
+    margin-bottom: 0;
+    text-align: left;
+}
+.Chat-Body .username{
+    margin-top: 0;
+    box-sizing: border-box;
+    margin:0 10px;
+    font-size: 0.8em;
+    color: gray;
+    
+}
+.Chat-Footer{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Chat-Footer input{
+    width: 26vw;
+    height: 5vh;
+    font-size: 1.2em;
+    border: 2px solid gray;
+}
+.Chat-Footer button{
+    width: 5vw;
+   
+    font-size:2em;
+     border: none;
+     background-color: green;
+     color: white;
+}
+@media only screen and (max-width: 500px) and (min-width : 280px){
+    .Chat{
+        width: 90vw;
+    }
+    .Chat-Head{
+        width: 90vw;
+    }
+
+    .Chat-Footer input{
+        width: 85vw;
+    }
+    .Chat-Footer button{
+        width: 20vw;
+    }
+    .Chat-Body{
+        width: 87vw;
+    }
+    .Chat-Body .message{
+        max-width: 50vw;
+    }
+  }
+  @media only screen and (min-width: 500px) and (max-width : 950px){
+    .Chat{
+        width: 90vw;
+    }
+    .Chat-Head{
+        width: 90vw;
+    }
+
+    .Chat-Footer input{
+        width: 85vw;
+    }
+    .Chat-Footer button{
+        width: 20vw;
+    }
+    .Chat-Body{
+        width: 87vw;
+    }
+    .Chat-Body .message{
+        max-width: 50vw;
+    }
+  }
